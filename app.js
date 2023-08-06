@@ -1,6 +1,6 @@
 async function getDashboardData(url = 'https://tverikinlv.github.io/results-summary-component-solution/data.json') {
     const response = await fetch(url);
-    const data = response.json();
+    const data = await response.json();
 
     return data;
 }
